@@ -1,0 +1,5 @@
+def convert(n):
+    num_str = str(n)[::-1]
+    groups = [num_str[i:i+3][::-1] for i in range(0, len(num_str), 3)]
+    result = ','.join(groups[::-1]).lstrip(',')
+    return result
